@@ -5,7 +5,7 @@ $.get("https://script.google.com/macros/s/AKfycbwMWX_dh4P2vVjMY40T1TetbUAUFgy_4N
         setInterval(() => setDate(), 1000);
 
         function setDate() {
-            let secs = dayjs.diff(startDate, 'second');
+            let secs = dayjs().diff(startDate, 'second');
             let mins = Math.floor(secs / 60);
             let hours = Math.floor(mins / 60);
             let days = Math.floor(hours / 24);
